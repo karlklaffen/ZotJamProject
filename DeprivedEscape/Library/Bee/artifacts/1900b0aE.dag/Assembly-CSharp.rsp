@@ -473,6 +473,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.3.4f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/HomeManager.cs"
+"Assets/Scripts/MinigameManager.cs"
 "Assets/Scripts/PlayerFunctionality.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0

@@ -21,16 +21,20 @@ public class PlayerFunctionality : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag(keyTag))
+
+        Debug.Log("trigger");
+        if (other.gameObject.CompareTag(keyTag))
         {
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
             gotKey = true;
+            Debug.Log("got key");
         }
-        else if (collision.gameObject.CompareTag(doorTag))
+        else if (other.gameObject.CompareTag(doorTag) && gotKey)
         {
             SceneManager.LoadScene(nextSceneName);
+            Debug.Log("got door");
         }
     }
 }
